@@ -44,7 +44,7 @@
     "tailwind-merge": "^2.2.0",
     "typescript": "5.0.3",
     "typewriter-effect": "^2.21.0",
-    "uuid": "9.0.0"
+    "uuid": "9.0.1"
   },
   "devDependencies": {
     "@types/uuid": "^9.0.1",
