@@ -8,8 +8,8 @@ on:
     branches:
       - test
   workflow_dispatch:
-# schedule:
-#     - cron: '30 12 * * 1-5'
+  schedule:
+    - cron: '30 12 * * 1' # This will run every Monday at 12:30 UTC
 
 jobs:
   LinkChecker:
