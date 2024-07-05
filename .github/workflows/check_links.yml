@@ -15,7 +15,7 @@ on:
 #     - cron: '30 12 * * 1-5'
 
 jobs:
-  validate:
+  LinkChecker:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -37,7 +37,7 @@ jobs:
         with:
           fail: true
           # args: --verbose --no-progress './**/*.json'  --exclude-mail
-          args: --accept '200,201,202,203,204,403,429,500' --max-concurrency 1 --cache --no-progress --exclude-all-private './**/*.md'
+          args: --accept '200,201,202,203,204,403,429,500' --max-concurrency 1 --cache --no-progress --exclude-all-private './**/*.md' './**/*.json'
           output: ${{ env.issue-content }}
 
       # Permissions (issues: read)
