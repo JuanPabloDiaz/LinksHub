@@ -4,7 +4,7 @@ on:
   pull_request:
     branches:
       - test # Change this to the branch to main later
-#   workflow_dispatch:
+  workflow_dispatch:
 # schedule:
 #     - cron: '30 12 * * 1-5'
 
