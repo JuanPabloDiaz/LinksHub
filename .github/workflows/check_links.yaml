@@ -3,7 +3,12 @@ name: Check links
 on:
   pull_request:
     branches:
-      - test # Change this to the branch to main later
+      - test
+  push:
+    paths:
+      - '.github/workflows/check_links.yaml'
+      - '.lycheeignore'
+      - '**/*.md'
   workflow_dispatch:
 # schedule:
 #     - cron: '30 12 * * 1-5'
@@ -30,7 +35,8 @@ jobs:
         uses: lycheeverse/lychee-action@v1.10.0
         with:
           fail: true
-          args: --verbose --no-progress './**/*.json'  --exclude-mail
+          # args: --verbose --no-progress './**/*.json'  --exclude-mail
+          args: --accept '200,201,202,203,204,403,429,500' --max-concurrency 1 --cache --no-progress --exclude-all-private './**/*.md'
           output: ${{ env.issue-content }}
 
       # Permissions (issues: read)

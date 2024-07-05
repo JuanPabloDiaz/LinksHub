@@ -1,3 +1,6 @@
+<!-- This is a list of URLs that Lychee should ignore. -->
+<!-- False Positive URL -->
+
 https://github.com/JuanPabloDiaz/LinksHub
 https://github.com/JuanPabloDiaz/LinksHub/pull
 https://github.com/JuanPabloDiaz/LinksHub/issue
