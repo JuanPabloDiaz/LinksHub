@@ -9,6 +9,7 @@ on:
       - '.github/workflows/check_links.yaml'
       - '.lycheeignore'
       - '**/*.md'
+      - '**/*.json'
   workflow_dispatch:
 # schedule:
 #     - cron: '30 12 * * 1-5'
