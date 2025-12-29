@@ -159,5 +159,13 @@
         "url": "https://jsoning.com/api/",
         "category": "backend",
         "subcategory": "api"
+    },
+    {
+        "name": "ElevenLabs API",
+        "description": "A free-to-start AI-powered text-to-speech API that lets developers integrate realistic voice generation into backend applications.",
+        "url": "https://docs.elevenlabs.io/",
+        "category": "backend",
+        "subcategory": "api"
     }
+
 ]
